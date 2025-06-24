@@ -8,6 +8,7 @@ import Pages from './components/pages/Pages';
 import Blog from './components/blog/Blog';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import SiteUnavailable from './SiteUnavailable';
 
 // Importing the ManiPedi component
 import ManiPedi from './components/MainServices/ManiPedi';
@@ -28,35 +29,36 @@ import Privacy from './components/Privacy';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes className="content">
-        <Route path="/" element={<HomeSkeleton />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/pages" element={<Pages />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route path="/pedicure-manicure" element={<ManiPedi />} />
+   // <Router>
+   //   <Navbar />
+   //   <Routes className="content">
+   //     <Route path="/" element={<HomeSkeleton />} />
+   //     <Route path="/about" element={<About />} />
+    //    <Route path="/services" element={<Services />} />
+   //     <Route path="/pages" element={<Pages />} />
+   //     <Route path="/blog" element={<Blog />} />
+   //     <Route path="/contact" element={<Contact />} />
+   //     <Route path="/privacy" element={<Privacy />} />
+    //    <Route path="/pedicure-manicure" element={<ManiPedi />} />
         {/* Adding the new route for Massage */}
-        <Route path="/massage" element={<Massage />} />
+    //    <Route path="/massage" element={<Massage />} />
 
         {/* Adding a Nail Art route */}
-        <Route path="/nail-art" element={<NailArt />} />
+   //     <Route path="/nail-art" element={<NailArt />} />
 
         {/* Adding Nail Extension */}
-        <Route path="/nail-extension" element={<NailExtension />} />
+    //    <Route path="/nail-extension" element={<NailExtension />} />
 
         {/* Adding MicroBlading */}
-        <Route path="/microblading" element={<MicroBlading />} />
+      //  <Route path="/microblading" element={<MicroBlading />} />
 
         {/* Add Gallery route */}
-        <Route path="/gallery" element={<Gallery />} />
-      </Routes>
-      <Footer />
-      <Analytics />
-    </Router>
+      //  <Route path="/gallery" element={<Gallery />} />
+  //    </Routes>
+   //   <Footer />
+   //   <Analytics />
+ //   </Router>
+     <SiteUnavailable />
   );
 }
 
