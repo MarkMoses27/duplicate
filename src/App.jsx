@@ -29,8 +29,18 @@ import Privacy from './components/Privacy';
 
 function App() {
   return (
-   // <Router>
-   //   <Navbar />
+  <Router>
+       <Routes className="content">
+            <Route path="/" element={<SiteUnavailable />} />
+        </Routes>
+  </Router>
+  );
+}
+
+export default App;
+
+
+ //   <Navbar />
    //   <Routes className="content">
    //     <Route path="/" element={<HomeSkeleton />} />
    //     <Route path="/about" element={<About />} />
@@ -57,9 +67,3 @@ function App() {
   //    </Routes>
    //   <Footer />
    //   <Analytics />
- //   </Router>
-     <SiteUnavailable />
-  );
-}
-
-export default App;
